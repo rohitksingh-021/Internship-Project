@@ -5,25 +5,46 @@ Page 1 i.e frontend This creates first page of our website
 <head>
     <meta charset="UTF-8">
     <title>Summer Internship Records</title>
-    <link rel="stylesheet" href="style.css"> <!-- We'll create this next -->
+    <link rel="stylesheet" href="style1.css">
 </head>
 <body>
+    <!-- Header Section -->
     <div class="header">
-        <img src="ADITYA_BIRLA_LOGO.png" alt="Aditya Birla Logo" class="logo">
+        <img src="logo.png" alt="Aditya Birla Logo" class="logo">
         <div class="title-section">
             <h1>SUMMER INTERNSHIP RECORDS</h1>
+
             <nav>
-                <a href="#">About us</a>
-                <a href="#">Department</a>
-                <a href="#">Contact</a>
+                <nav>
+    <div class="dropdown">
+        <a href="https://www.hindalco.com/about-us">About us</a>
+    </div>
+    <div class="dropdown">
+        <a href="#">Department</a>
+        <div class="dropdown-content">
+            <!-- Edit these options as needed -->
+            <a href="#">HR</a>
+            <a href="#">Engineering</a>
+            <a href="#">R&amp;D</a>
+            <a href="#">Management</a>
+            <a href="#">Accounts</a>
+        </div>
+    </div>
+    <div class="dropdown">
+        <a href="https://www.hindalco.com/contact-us">Contact us</a>
+    </div>
+</nav>
+
             </nav>
         </div>
     </div>
     
+    <!-- Plant Banner Image -->
     <div class="banner">
-        <img src="plant.jpg" alt="Plant" class="banner-img">
+        <img src="banner.png" alt="Plant" class="banner-img">
     </div>
     
+    <!-- Main Form Container -->
     <div class="form-container">
         <h2>FETCH INTERN DETAILS</h2>
         <form>
