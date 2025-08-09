@@ -1,0 +1,127 @@
+first page css1
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #173163;
+    color: white;
+}
+
+/* Header styles */
+.header {
+    background: #0747a6;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.logo {
+    width: 60px;
+    margin-right: 15px;
+}
+
+.title-section {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.title-section h1 {
+    font-size: 1.3em;
+    font-weight: bold;
+    margin: 0;
+    text-align: left;
+    letter-spacing: 1px;
+}
+
+.title-section nav {
+    display: flex;
+    gap: 30px;
+    font-size: 1em;
+}
+
+.title-section nav a {
+    color: #fff;
+    text-decoration: none;
+    font-style: italic;
+}
+
+/* Banner styles */
+.banner {
+    width: 100%;
+    height: 220px;
+    overflow: hidden;
+}
+
+.banner-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Form container styles */
+.form-container {
+    margin: 40px auto 0 auto;
+    background: #395fa8;
+    border-radius: 40px;
+    width: 440px;
+    padding: 40px 30px;
+    box-shadow: 0px 0px 30px rgba(0,0,0,0.2);
+}
+
+.form-container h2 {
+    text-align: left;
+    font-size: 2em;
+    font-style: italic;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+.form-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-container input[type="text"],
+.form-container input[type="password"] {
+    padding: 10px;
+    font-size: 1.1em;
+    border: none;
+    border-bottom: 2px solid #fff;
+    background: transparent;
+    color: #fff;
+    outline: none;
+}
+
+.form-container button {
+    padding: 13px;
+    font-size: 1.2em;
+    margin: 5px 0;
+    border: none;
+    border-radius: 2px;
+    background: #fff;
+    color: #173163;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.form-container button:hover {
+    background: #d7eaff;
+}
+
+/* Responsive styling */
+@media (max-width: 600px) {
+    .form-container {
+        width: 90%;
+        padding: 30px 10px;
+    }
+    .banner {
+        height: 120px;
+    }
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+}
