@@ -1,0 +1,38 @@
+Page 1 i.e frontend This creates first page of our website
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Summer Internship Records</title>
+    <link rel="stylesheet" href="style.css"> <!-- We'll create this next -->
+</head>
+<body>
+    <div class="header">
+        <img src="ADITYA_BIRLA_LOGO.png" alt="Aditya Birla Logo" class="logo">
+        <div class="title-section">
+            <h1>SUMMER INTERNSHIP RECORDS</h1>
+            <nav>
+                <a href="#">About us</a>
+                <a href="#">Department</a>
+                <a href="#">Contact</a>
+            </nav>
+        </div>
+    </div>
+    
+    <div class="banner">
+        <img src="plant.jpg" alt="Plant" class="banner-img">
+    </div>
+    
+    <div class="form-container">
+        <h2>FETCH INTERN DETAILS</h2>
+        <form>
+            <input type="text" placeholder="ENTER USERNAME" required>
+            <input type="password" placeholder="ENTER PASSWORD" required>
+            <button type="submit">LOGIN</button>
+            <button type="button" onclick="window.location.href='#'">NEW USER REGISTER</button>
+            <button type="button" onclick="window.location.href='#'">ADMIN LOGIN</button>
+        </form>
+    </div>
+</body>
+</html>
