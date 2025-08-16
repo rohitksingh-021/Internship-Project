@@ -2,11 +2,13 @@ Page 1 i.e frontend This creates first page of our website
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Summer Internship Records</title>
     <link rel="stylesheet" href="style1.css">
 </head>
+
 <body>
     <!-- Header Section -->
     <div class="header">
@@ -16,34 +18,34 @@ Page 1 i.e frontend This creates first page of our website
 
             <nav>
                 <nav>
-    <div class="dropdown">
-        <a href="https://www.hindalco.com/about-us">About us</a>
-    </div>
-    <div class="dropdown">
-        <a href="#">Department</a>
-        <div class="dropdown-content">
-            <!-- Edit these options as needed -->
-            <a href="#">HR</a>
-            <a href="#">Engineering</a>
-            <a href="#">R&amp;D</a>
-            <a href="#">Management</a>
-            <a href="#">Accounts</a>
-        </div>
-    </div>
-    <div class="dropdown">
-        <a href="https://www.hindalco.com/contact-us">Contact us</a>
-    </div>
-</nav>
+                    <div class="dropdown">
+                        <a href="https://www.hindalco.com/about-us">About us</a>
+                    </div>
+                    <div class="dropdown">
+                        <a href="#">Department</a>
+                        <div class="dropdown-content">
+                            <!-- Edit these options as needed -->
+                            <a href="#">HR</a>
+                            <a href="#">Engineering</a>
+                            <a href="#">R&amp;D</a>
+                            <a href="#">Management</a>
+                            <a href="#">Accounts</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <a href="https://www.hindalco.com/contact-us">Contact us</a>
+                    </div>
+                </nav>
 
             </nav>
         </div>
     </div>
-    
+
     <!-- Plant Banner Image -->
     <div class="banner">
         <img src="banner.png" alt="Plant" class="banner-img">
     </div>
-    
+
     <!-- Main Form Container -->
     <div class="form-container">
         <h2>FETCH INTERN DETAILS</h2>
@@ -51,9 +53,11 @@ Page 1 i.e frontend This creates first page of our website
             <input type="text" placeholder="ENTER USERNAME" required>
             <input type="password" placeholder="ENTER PASSWORD" required>
             <button type="submit">LOGIN</button>
-            <button type="button" onclick="window.location.href='#'">NEW USER REGISTER</button>
-            <button type="button" onclick="window.location.href='#'">ADMIN LOGIN</button>
+            <button type="button" onclick="window.location.href='register.html'">NEW INTERN REGISTER</button>
+            <button type="button" onclick="window.location.href='admin.html'">ADMIN LOGIN</button>
+
         </form>
     </div>
 </body>
+
 </html>
