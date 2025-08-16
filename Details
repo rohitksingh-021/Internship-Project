@@ -1,0 +1,62 @@
+Details Page
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Intern Details | Summer Internship Records</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+
+<body>
+    
+    <div class="header">
+        <img src="logo.png" alt="Aditya Birla Logo" class="logo">
+        <div class="title-section">
+            <h1>SUMMER INTERNSHIP RECORDS</h1>
+            <nav>
+                <div class="dropdown">
+                    <a href="https://www.hindalco.com/about-us">About us</a>
+                </div>
+                <div class="dropdown">
+                    <a href="#">Department</a>
+                    <div class="dropdown-content">
+                        <!-- Edit these options as needed -->
+                        <a href="#">HR</a>
+                        <a href="#">Engineering</a>
+                        <a href="#">R&amp;D</a>
+                        <a href="#">Management</a>
+                        <a href="#">Accounts</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a href="https://www.hindalco.com/contact-us">Contact us</a>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Banner Image -->
+    <div class="banner">
+        <img src="banner.png" alt="Plant Banner" class="banner-img">
+    </div>
+
+    <!-- Intern Details Section -->
+    <div class="form-container" style="min-height:340px;">
+        <h2 style="text-align:center;">INTERN DETAILS</h2>
+        <!-- Static example: replace with dynamic data as needed -->
+        <div style="margin-top:18px; font-size:1.18em;">
+            <p><strong>NAME :</strong> XYZ</p>
+            <p><strong>COLLEGE :</strong> XYZ COLLEGE</p>
+            <p><strong>DURATION :</strong> 1 June 2025 – 31 July 2025</p>
+            <p><strong>DEPARTMENT :</strong> INFORMATION TECHNOLOGY</p>
+            <p><strong>CERTIFICATE :</strong> NOT ISSUED</p>
+            <p><strong>PROJECT :</strong> SUMER INTERNSHIP RECORDS</p>
+            <p><strong>EMAIL :</strong> xyz@gmail.com</p>
+            <p><strong>Phone NO. :</strong> 000000000</p>
+        </div>
+    </div>
+</body>
+
+</html>
