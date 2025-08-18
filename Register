@@ -1,0 +1,57 @@
+ Register Page
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Register | Summer Internship Records</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+
+<body>
+    
+    <div class="header">
+        <img src="logo.png" alt="Aditya Birla Logo" class="logo">
+        <div class="title-section">
+            <h1>SUMMER INTERNSHIP RECORDS</h1>
+            <nav>
+                <div class="dropdown">
+                    <a href="https://www.hindalco.com/about-us">About us</a>
+                </div>
+                <div class="dropdown">
+                    <a href="#">Department</a>
+                    <div class="dropdown-content">
+                        <!-- Edit these options as needed -->
+                        <a href="#">HR</a>
+                        <a href="#">Engineering</a>
+                        <a href="#">R&amp;D</a>
+                        <a href="#">Management</a>
+                        <a href="#">Accounts</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a href="https://www.hindalco.com/contact-us">Contact us</a>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Banner image (same as login page) -->
+    <div class="banner">
+        <img src="banner.png" alt="Plant" class="banner-img">
+    </div>
+
+    <!-- Register Form -->
+    <div class="form-container">
+        <h2 style="text-align:center;">REGISTER INTERN</h2>
+        <form>
+            <input type="text" placeholder="NAME" required>
+            <input type="text" placeholder="DETAILS ETC..." required>
+            <button type="submit">SUBMIT</button>
+            <button type="button" onclick="window.location.href='index1.html'">BACK TO LOGIN</button>
+        </form>
+    </div>
+</body>
+</html>
