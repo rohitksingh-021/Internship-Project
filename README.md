@@ -1,2 +1,2 @@
 # Internship-Project
-It's a project which was assigned during uring my internship.
+It's a project which was assigned during my internship.
