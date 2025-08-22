@@ -50,5 +50,4 @@ Certificate issuance system
 Export reports in PDF/Excel
 Enhanced search & filtering options
 Responsive Design
-
 Modern, mobile-friendly UI styled with style1.css
