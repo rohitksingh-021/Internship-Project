@@ -1,0 +1,240 @@
+Admin Portal Page
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Portal | Summer Internship Records</title>
+    <link rel="stylesheet" href="style1.css">
+    <style>
+        .admin-panel {
+            margin: 40px auto 0 auto;
+            background: #395fa8;
+            border-radius: 40px;
+            width: 94%;
+            max-width: 800px;
+            padding: 40px 30px 35px 30px;
+            color: #fff;
+            box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);
+            font-size: 1.15em;
+        }
+
+        .admin-panel h2 {
+            text-align: center;
+            font-size: 2.1em;
+            font-style: italic;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .stats-links a {
+            color: #fff;
+            text-decoration: underline;
+        }
+
+        .stats-links {
+            font-size: 1.05em;
+            margin-bottom: 6px;
+            line-height: 1.6em;
+        }
+
+        .fetch-record-box {
+            margin: 34px 0 14px 0;
+            padding-bottom: 12px;
+            border-bottom: 1.5px solid #e0e8ff;
+        }
+
+        .fetch-title {
+            font-size: 1.29em;
+            font-weight: bold;
+            font-style: italic;
+            margin-bottom: 8px;
+            margin-top: 8px;
+            text-align: center;
+            letter-spacing: 0.5px;
+        }
+
+        .fetch-fields {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: flex-start;
+            margin-top: 17px;
+            gap: 38px;
+        }
+
+        .fetch-block {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 210px;
+            background: transparent;
+        }
+
+        .fetch-block span {
+            font-weight: bold;
+            font-style: italic;
+            font-size: 1.13em;
+            margin-bottom: 8px;
+        }
+
+        .fetch-row {
+            margin-bottom: 13px;
+            width: 100%;
+        }
+
+        .fetch-row label {
+            display: inline-block;
+            width: 70px;
+            font-weight: bold;
+            font-style: italic;
+        }
+
+        .fetch-row input {
+            padding: 6px 14px;
+            width: 90px;
+            border: none;
+            border-radius: 4px;
+            font-size: 1.1em;
+            background: #e6eaff;
+            color: #173163;
+            margin-left: 3px;
+            text-align: center;
+            letter-spacing: 0.5px;
+        }
+
+        .apply-row {
+            display: flex;
+            justify-content: center;
+            margin-top: 18px;
+        }
+
+        .apply-row button {
+            padding: 10px 36px;
+            font-size: 1.18em;
+            border: none;
+            border-radius: 4px;
+            background: #fff;
+            color: #173163;
+            font-weight: bold;
+            letter-spacing: 1px;
+            cursor: pointer;
+            box-shadow: 0px 2px 6px rgba(23, 49, 99, 0.09);
+            transition: background 0.3s;
+        }
+
+        .intern-list {
+            margin: 29px 0 0 0;
+            font-size: 1.09em;
+            padding-left: 23px;
+        }
+
+        .intern-list li {
+            margin-bottom: 13px;
+            letter-spacing: 0.2px;
+            line-height: 1.7;
+        }
+
+        @media (max-width:850px) {
+            .admin-panel {
+                padding: 18px 4vw;
+            }
+
+            .fetch-fields {
+                flex-direction: column;
+                align-items: center;
+                gap: 10px;
+            }
+
+            .fetch-block {
+                width: 90vw;
+                max-width: 320px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        <img src="logo.png" alt="Aditya Birla Logo" class="logo">
+        <div class="title-section">
+            <h1>SUMMER INTERNSHIP RECORDS</h1>
+            <nav>
+                <div class="dropdown">
+                    <a href="https://www.hindalco.com/about-us">About us</a>
+                </div>
+                <div class="dropdown">
+                    <a href="#">Department</a>
+                    <div class="dropdown-content">
+                        <!-- Edit these options as needed -->
+                        <a href="#">HR</a>
+                        <a href="#">Engineering</a>
+                        <a href="#">R&amp;D</a>
+                        <a href="#">Management</a>
+                        <a href="#">Accounts</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a href="https://www.hindalco.com/contact-us">Contact us</a>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Banner Image -->
+    <div class="banner">
+        <img src="banner.png" alt="Plant Banner" class="banner-img">
+    </div>
+
+    <!-- Admin Portal Panel -->
+    <div class="admin-panel">
+        <h2>ADMIN PORTAL</h2>
+        <div class="stats-links">
+            Total internship <a href="#">done</a> :<br>
+            Interns <a href="#">ongoing</a> <span style="font-style:italic;">(with departments)</span> :
+        </div>
+        <div class="fetch-record-box">
+            <div class="fetch-title">FETCH PAST INTERNS RECORD</div>
+            <form id="fetch-form" autocomplete="off">
+                <div class="fetch-fields">
+                    <div class="fetch-block">
+                        <span>FROM</span>
+                        <div class="fetch-row">
+                            <label for="from-year">YEAR</label>
+                            <input type="text" id="from-year" name="from-year" placeholder="Enter Year" required>
+                        </div>
+                        <div class="fetch-row">
+                            <label for="from-month">MONTH</label>
+                            <input type="text" id="from-month" name="from-month" placeholder="Enter Month" required>
+                        </div>
+                    </div>
+                    <div class="fetch-block">
+                        <span>TO</span>
+                        <div class="fetch-row">
+                            <label for="to-year">YEAR</label>
+                            <input type="text" id="to-year" name="to-year" placeholder="Enter Year" required>
+                        </div>
+                        <div class="fetch-row">
+                            <label for="to-month">MONTH</label>
+                            <input type="text" id="to-month" name="to-month" placeholder="Enter Month" required>
+                        </div>
+                    </div>
+                </div>
+                <div class="apply-row">
+                    <button type="submit" id="apply-btn">APPLY</button>
+                </div>
+            </form>
+            <hr style="margin:24px 0 0 0; border-top:1.7px solid #e0e8ff;">
+        </div>
+        <!-- Intern list is ALWAYS visible by default -->
+        <ul class="intern-list" id="intern-list">
+            <li>1. <span style="font-weight:bold;">XYZ</span> &nbsp;|&nbsp; XYZ COLLEGE &nbsp;|&nbsp; June 2024
+                &nbsp;|&nbsp; INFORMATION TECHNOLOGY</li>
+            <li>...</li>
+        </ul>
+    </div>
+</body>
+
+</html>
